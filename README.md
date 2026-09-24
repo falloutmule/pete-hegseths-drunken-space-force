@@ -12,7 +12,7 @@ Drag in the battlefield to fly; weapons fire automatically. A second finger can 
 
 This repository contains the playable release. GitHub Pages publishes the root of `main`. The canonical development checkout retains the editable source and tests.
 
-Current build: `dsf-20260924-r7`. Source game commit: `3466785`. Automated testing is separate from physical phone acceptance.
+Current build: `dsf-20260924-r8`. Source game commit: `f599943`. Automated testing is separate from physical phone acceptance.
 
 ## Phone-play repair
 
@@ -33,3 +33,9 @@ The original specification above is preserved unchanged. These confirmed phone-p
 - Pete's existing portraits, explicit level labels and a sobriety timer show the current state. Held touch movement rebases safely when controls reverse or return to normal.
 
 These confirmed booze changes supersede the original specification's intoxication details and the previous temporary booze freeze. The original specification remains unchanged for reference. Automated tests verify phone-sized touch input, fullscreen, every tier transition, native browser vibration requests, and unsupported API fallback. Actual vibration strength and touch feel still require physical phone hardware.
+
+## Visible combat repair
+
+Incoming ships now enter the visible battlefield before they can attack or take damage. This prevents player, escort, Imperial and explosive fire from killing enemies offscreen and leaving only drifting pickups. Opening formations are larger and more frequent, with varied lanes and staggered entry. Ordinary pickup clutter is capped. Enemy health, booze power/impairments, bottle timing, upgrade spacing and the bond/salvo economy remain unchanged.
+
+Verified with ordinary sober phone-sized touch play, offscreen-hit regression tests and the existing phone/fullscreen/intoxication suites. The original specification remains unchanged; these confirmed repairs supersede its corresponding implementation details.
