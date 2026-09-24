@@ -1,9 +1,9 @@
 {
-  "buildId": "dsf-20260924-r6",
-  "sourceGameCommit": "95caefd30be77d98738e0e20c85f3ca13374c25a",
+  "buildId": "dsf-20260924-r7",
+  "sourceGameCommit": "34667850507e0b419ddae5d8745203c20157eec3",
   "artifact": "index.html",
-  "bytes": 2232424,
-  "sha256": "ba911acdb0fb802063e7259a5e99439fd63fcc201e33241d5b3701eafcf05ee7",
+  "bytes": 2236629,
+  "sha256": "26fdb03d8d3add3904ced35ce9e2d405b5d01d90fc8930c6b047327a9bb87ba4",
   "originalSpecification": "PETE_HEGSETHS_DRUNKEN_SPACE_FORCE_COMPLETE_SPEC.md",
   "specificationSha256": "c7f3f3572efb189fe576747c0573e619a1db6c4d9389de2853f9fe2f71bcf652"
 }

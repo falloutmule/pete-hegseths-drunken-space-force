@@ -12,13 +12,24 @@ Drag in the battlefield to fly; weapons fire automatically. A second finger can 
 
 This repository contains the playable release. GitHub Pages publishes the root of `main`. The canonical development checkout retains the editable source and tests.
 
-Current build: `dsf-20260924-r6`. Source game commit: `95caefd`. Automated testing is separate from physical phone acceptance.
+Current build: `dsf-20260924-r7`. Source game commit: `3466785`. Automated testing is separate from physical phone acceptance.
 
 ## Phone-play repair
 
 - The segmented HULL rail shows remaining health and reacts to damage.
 - BURN $1B purchases a 14-missile emergency homing salvo. SELL BONDS replenishes money. Ordinary missile pickups and the regular missile upgrade are removed.
 - Early upgrades have roughly twice the breathing room, with shorter minimum gaps later.
-- Booze behavior is unchanged.
+- The booze system now uses the four states described below.
 
 The original specification above is preserved unchanged. These confirmed phone-play changes supersede its earlier health, fullscreen, upgrade-cadence, and burn/missile details.
+
+## Booze rework
+
+- SOBER retains normal weapons and controls.
+- DRUNK 1 raises damage, shot size and fire rate. Controls and vision remain normal.
+- DRUNK 2 adds still more firepower and double vision. Controls remain normal.
+- DRUNK 3 adds the strongest firepower, stable reversed movement and irregular vibration where supported.
+- Each bottle advances one tier and refills its timer. Without another drink, intoxication steps back down through every tier to sober, removing the relevant impairment each time.
+- Pete's existing portraits, explicit level labels and a sobriety timer show the current state. Held touch movement rebases safely when controls reverse or return to normal.
+
+These confirmed booze changes supersede the original specification's intoxication details and the previous temporary booze freeze. The original specification remains unchanged for reference. Automated tests verify phone-sized touch input, fullscreen, every tier transition, native browser vibration requests, and unsupported API fallback. Actual vibration strength and touch feel still require physical phone hardware.
