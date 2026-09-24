@@ -12,7 +12,7 @@ Drag in the battlefield to fly; weapons fire automatically. A second finger can 
 
 This repository contains the playable release. GitHub Pages publishes the root of `main`. The canonical development checkout retains the editable source and tests.
 
-Current build: `dsf-20260924-r8`. Source game commit: `f599943`. Automated testing is separate from physical phone acceptance.
+Current build: `dsf-20260924-r9`. Source game commit: `8659d83`. Automated testing is separate from physical phone acceptance.
 
 ## Phone-play repair
 
@@ -39,3 +39,9 @@ These confirmed booze changes supersede the original specification's intoxicatio
 Incoming ships now enter the visible battlefield before they can attack or take damage. This prevents player, escort, Imperial and explosive fire from killing enemies offscreen and leaving only drifting pickups. Opening formations are larger and more frequent, with varied lanes and staggered entry. Ordinary pickup clutter is capped. Enemy health, booze power/impairments, bottle timing, upgrade spacing and the bond/salvo economy remain unchanged.
 
 Verified with ordinary sober phone-sized touch play, offscreen-hit regression tests and the existing phone/fullscreen/intoxication suites. The original specification remains unchanged; these confirmed repairs supersede its corresponding implementation details.
+
+## Extra drinks and sobering up
+
+Booze drains continuously through Level 3 → 2 → 1 → sober, with a countdown to the next tier. Every level change flashes the HUD label and briefly announces the new level. While already at Level 3, each extra bottle costs one hull even through shields and refills the Level 3 timer. Extra drinks can end the run. Bottles show a red hull-damage warning while at Level 3. Reduced motion keeps the announcement static.
+
+Verified with simulation tests and phone-sized Chrome fullscreen/pickup-collision checks, including decay, repeated and fatal extra drinks, death/restart, and portrait/landscape layouts. Original game specification is unchanged.
