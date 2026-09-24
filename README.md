@@ -2,6 +2,10 @@
 
 [Play the game](https://falloutmule.github.io/pete-hegseths-drunken-space-force/)
 
+[Read the original complete game specification](PETE_HEGSETHS_DRUNKEN_SPACE_FORCE_COMPLETE_SPEC.md)
+
+The original specification is included unchanged and remains the product reference for future edits.
+
 A portrait arcade shooter and fictional political satire. The release is one self-contained HTML file with embedded artwork, game code, and synthesized audio.
 
 Drag in the battlefield to fly; weapons fire automatically. A second finger can press SELL BONDS or BURN $1B. Pause contains sensitivity, effects, sound, and fullscreen settings.
